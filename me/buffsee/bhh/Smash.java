@@ -10,6 +10,7 @@ import java.awt.RenderingHints;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
+import java.util.Arrays;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -49,26 +50,26 @@ public class Smash extends Thread {
 			new Thread("p1 updater thread") {
 				@Override
 				public void run() {
-					SmashWindowObject p1 = new SmashWindowObject("p1", poneRect1, x1, y1);
-					
+					Main.smashWindows[0] = new SmashWindowObject("p1", poneRect1, x1, y1);
+					System.out.println(Arrays.toString(Main.smashWindows));
 				}
 			}.start();
 			new Thread("p2 updater thread") {
 				@Override
 				public void run() {
-					SmashWindowObject p2 = new SmashWindowObject("p2", poneRect2, x2, y2);
+					Main.smashWindows[1] = new SmashWindowObject("p2", poneRect2, x2, y2);
 				}
 			}.start();
 			new Thread("p3 updater thread") {
 				@Override
 				public void run() {
-					SmashWindowObject p3 = new SmashWindowObject("p3", poneRect3, x3, y3);
+					Main.smashWindows[2] = new SmashWindowObject("p3", poneRect3, x3, y3);
 				}
 			}.start();
 			new Thread("p4 updater thread") {
 				@Override
 				public void run() {
-					SmashWindowObject p4 = new SmashWindowObject("p4", poneRect4, x4, y4);
+					Main.smashWindows[3] = new SmashWindowObject("p4", poneRect4, x4, y4);
 				}
 			}.start();
 		} else {
@@ -85,21 +86,21 @@ public class Smash extends Thread {
 			new Thread("p1 updater thread") {
 				@Override
 				public void run() {
-					SmashWindowObject p1 = new SmashWindowObject("p1", poneRect1, x1, y1);
+					Main.smashWindows[0] = new SmashWindowObject("p1", poneRect1, x1, y1);
 					
 				}
 			}.start();
 			new Thread("p2 updater thread") {
 				@Override
 				public void run() {
-					SmashWindowObject p2 = new SmashWindowObject("p2", poneRect2, x2, y2);
+					Main.smashWindows[1] = new SmashWindowObject("p2", poneRect2, x2, y2);
 				}
 			}.start();
 
 		}
 	}
 
-	
+
 	public boolean isTwos() {
 		return this.twos;
 	}
@@ -107,7 +108,4 @@ public class Smash extends Thread {
 	public void setTwos(boolean twos) {
 		this.twos = twos;
 	}
-
-
-	
 }

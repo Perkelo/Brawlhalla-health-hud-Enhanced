@@ -1,7 +1,9 @@
 # Brawlhalla Health HUD Enhanced
 
-#### Improvement on [Brawlhalla Health HUD V2 by BFCE](https://github.com/BFCE/Brawlhalla-health-hud-V2)
+##### "Brogle🥦"  -BirdsCanFlyWhyCantI, 2021
 
+
+#### Improvement on [Brawlhalla Health HUD V2 by BFCE](https://github.com/BFCE/Brawlhalla-health-hud-V2)
 
 This is an open-source Java application that overlays the health of the players onto your screen. Since dll injection in Java isn't really a thing, it achieves this by making itself an "always on top" window, and tricking windows into thinking a fullscreen application is on the top.
 
@@ -48,6 +50,7 @@ If you have problems with the tool not opening anymore after saving your setting
 
 
 ### New features might be added later, and suggestions are highly welcome! Write me at Perkelo#5314 on Discord if you have ideas/bugs/just want to talk!
+
 
 # Contributions
 

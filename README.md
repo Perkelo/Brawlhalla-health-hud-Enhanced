@@ -1,6 +1,6 @@
 # Brawlhalla Health HUD Enhanced
 
-##### "Brogle🥦"  -BirdsCanFlyWhyCantI, 2021
+#### "Brogle🥦"  -BirdsCanFlyWhyCantI, 2021
 
 
 #### Improvement on [Brawlhalla Health HUD V2 by BFCE](https://github.com/BFCE/Brawlhalla-health-hud-V2)
